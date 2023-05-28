@@ -16,7 +16,7 @@ import org.powbot.api.rt4.walking.model.Skill
 import org.powbot.api.script.tree.Branch
 import org.powbot.api.script.tree.TreeComponent
 
-class IsGrandExchangeOpened(script: LogBurner) : Branch<LogBurner>(script, "Grand Exchange open?") {
+class IsGrandExchangeOpened(script: LogBurner) : Branch<LogBurner>(script, "Grand EcurrFiremakingLvlchange open?") {
     override val successComponent: TreeComponent<LogBurner> = CloseGrandExchange(script)
     override val failedComponent: TreeComponent<LogBurner> = IsBankOpened(script)
 
@@ -41,24 +41,20 @@ class HaveInventory(script: LogBurner) : Branch<LogBurner>(script, "Have proper 
     override fun validate(): Boolean {
         Variables.logsToBurn = 0
         val currFiremakingLvl = Skills.realLevel(Skill.Firemaking)
-        if (currFiremakingLvl > 14) {
-            Variables.logsToBurn = if (Skills.realLevel(Skill.Firemaking) > 29) {
-                if (currFiremakingLvl > 34) {
-                    if (currFiremakingLvl > 44) {
-                        if (currFiremakingLvl > 49) {
-                            if (currFiremakingLvl > 59) {
-                                if (currFiremakingLvl > 74) {
-                                    if (currFiremakingLvl > 89) 9 else 8
-                                } else 6
-                            } else 5
-                        } else 4
-                    } else 3
-                } else 2
-            } else 1
+        Variables.logsToBurn = when {
+            currFiremakingLvl > 89 -> 9
+            currFiremakingLvl > 74 -> 8
+            currFiremakingLvl > 59 -> 7
+            currFiremakingLvl > 49 -> 6
+            currFiremakingLvl > 44 -> 5
+            currFiremakingLvl > 34 -> 4
+            currFiremakingLvl > 29 -> 3
+            currFiremakingLvl > 14 -> 2
+            else -> 1
         }
 
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() == 27 &&
-                Inventory.stream().name("Tinderbox").count().toInt() == 1
+                Inventory.stream().name("TinderbocurrFiremakingLvl").count().toInt() == 1
     }
 }
 
@@ -69,24 +65,20 @@ class HaveInventoryTwo(script: LogBurner) : Branch<LogBurner>(script, "Have prop
     override fun validate(): Boolean {
         Variables.logsToBurn = 0
         val currFiremakingLvl = Skills.realLevel(Skill.Firemaking)
-        if (currFiremakingLvl > 14) {
-            Variables.logsToBurn = if (Skills.realLevel(Skill.Firemaking) > 29) {
-                if (currFiremakingLvl > 34) {
-                    if (currFiremakingLvl > 44) {
-                        if (currFiremakingLvl > 49) {
-                            if (currFiremakingLvl > 59) {
-                                if (currFiremakingLvl > 74) {
-                                    if (currFiremakingLvl > 89) 9 else 8
-                                } else 6
-                            } else 5
-                        } else 4
-                    } else 3
-                } else 2
-            } else 1
+        Variables.logsToBurn = when {
+            currFiremakingLvl > 89 -> 9
+            currFiremakingLvl > 74 -> 8
+            currFiremakingLvl > 59 -> 7
+            currFiremakingLvl > 49 -> 6
+            currFiremakingLvl > 44 -> 5
+            currFiremakingLvl > 34 -> 4
+            currFiremakingLvl > 29 -> 3
+            currFiremakingLvl > 14 -> 2
+            else -> 1
         }
 
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() == 27 &&
-                Inventory.stream().name("Tinderbox").count().toInt() == 1
+                Inventory.stream().name("TinderbocurrFiremakingLvl").count().toInt() == 1
     }
 }
 
@@ -95,7 +87,7 @@ class IsInventoryEmpty(script: LogBurner) : Branch<LogBurner>(script, "Empty Inv
     override val failedComponent: TreeComponent<LogBurner> = DepositInventory(script)
 
     override fun validate(): Boolean {
-        return Inventory.isEmpty() || (Inventory.stream().name("Tinderbox").count().toInt() == 1
+        return Inventory.isEmpty() || (Inventory.stream().name("TinderbocurrFiremakingLvl").count().toInt() == 1
                 && Inventory.occupiedSlotCount() == 1)
     }
 }
