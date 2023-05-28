@@ -21,21 +21,15 @@ class SetupInventory(script: LogBurner) : Leaf<LogBurner>(script, "Setting Up In
                 return
             }
         }
+
         if (Skills.realLevel(Skill.Firemaking) >= Variables.stopAtLvl) {
             script.info("Script stopping due to firemaking level goal reached.")
             ScriptManager.stop()
             return
         }
-        else if (Inventory.stream().name("Tinderbox").count().toInt() == 0) {
-            var bankTinderBox = Bank.stream().name("Tinderbox").first()
-            for (n in 1..10) {
-                if (bankTinderBox.valid())
-                    break
 
-                Condition.sleep(50)
-                bankTinderBox = Bank.stream().name("Tinderbox").first()
-            }
-
+        if (Inventory.stream().name("Tinderbox").count().toInt() == 0) {
+            val bankTinderBox = Bank.stream().name("Tinderbox").first()
             if (!bankTinderBox.valid()) {
                 script.severe("Could not find any tinderboxes in the bank.")
                 ScriptManager.stop()
@@ -55,15 +49,7 @@ class SetupInventory(script: LogBurner) : Leaf<LogBurner>(script, "Setting Up In
         }
 
         if (Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() != 27) {
-            var bankLogs = Bank.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).first()
-            for (n in 1..10) {
-                if (bankLogs.valid())
-                    break
-
-                Condition.sleep(50)
-                bankLogs = Bank.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).first()
-            }
-
+            val bankLogs = Bank.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).first()
             if (!bankLogs.valid()) {
                 script.severe("Could not find any logs in the bank. ")
                 ScriptManager.stop()
