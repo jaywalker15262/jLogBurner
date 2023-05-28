@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Improving logic for burning branch checks.">
+    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Get rid of all the ugly nesting and use when instead.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +102,19 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1685305630102</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Removing redundant for loop in SetupInventory()">
+      <created>1685307203956</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1685307203956</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Get rid of all the ugly nesting and use when instead.">
+      <created>1685307919464</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1685307919464</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +131,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Improving logic for burning branch checks." />
-    <option name="LAST_COMMIT_MESSAGE" value="Improving logic for burning branch checks." />
+    <MESSAGE value="Removing redundant for loop in SetupInventory()" />
+    <MESSAGE value="Get rid of all the ugly nesting and use when instead." />
+    <option name="LAST_COMMIT_MESSAGE" value="Get rid of all the ugly nesting and use when instead." />
   </component>
 </project>

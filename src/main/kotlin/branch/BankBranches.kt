@@ -42,15 +42,15 @@ class HaveInventory(script: LogBurner) : Branch<LogBurner>(script, "Have proper 
         Variables.logsToBurn = 0
         val currFiremakingLvl = Skills.realLevel(Skill.Firemaking)
         Variables.logsToBurn = when {
-            currFiremakingLvl > 89 -> 9
-            currFiremakingLvl > 74 -> 8
-            currFiremakingLvl > 59 -> 7
-            currFiremakingLvl > 49 -> 6
-            currFiremakingLvl > 44 -> 5
-            currFiremakingLvl > 34 -> 4
-            currFiremakingLvl > 29 -> 3
-            currFiremakingLvl > 14 -> 2
-            else -> 1
+            currFiremakingLvl > 89 -> 8
+            currFiremakingLvl > 74 -> 7
+            currFiremakingLvl > 59 -> 6
+            currFiremakingLvl > 49 -> 5
+            currFiremakingLvl > 44 -> 4
+            currFiremakingLvl > 34 -> 3
+            currFiremakingLvl > 29 -> 2
+            currFiremakingLvl > 14 -> 1
+            else -> 0
         }
 
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() == 27 &&
@@ -66,15 +66,15 @@ class HaveInventoryTwo(script: LogBurner) : Branch<LogBurner>(script, "Have prop
         Variables.logsToBurn = 0
         val currFiremakingLvl = Skills.realLevel(Skill.Firemaking)
         Variables.logsToBurn = when {
-            currFiremakingLvl > 89 -> 9
-            currFiremakingLvl > 74 -> 8
-            currFiremakingLvl > 59 -> 7
-            currFiremakingLvl > 49 -> 6
-            currFiremakingLvl > 44 -> 5
-            currFiremakingLvl > 34 -> 4
-            currFiremakingLvl > 29 -> 3
-            currFiremakingLvl > 14 -> 2
-            else -> 1
+            currFiremakingLvl > 89 -> 8
+            currFiremakingLvl > 74 -> 7
+            currFiremakingLvl > 59 -> 6
+            currFiremakingLvl > 49 -> 5
+            currFiremakingLvl > 44 -> 4
+            currFiremakingLvl > 34 -> 3
+            currFiremakingLvl > 29 -> 2
+            currFiremakingLvl > 14 -> 1
+            else -> 0
         }
 
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() == 27 &&
