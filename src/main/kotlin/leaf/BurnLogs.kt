@@ -63,6 +63,6 @@ class BurnLogs(script: LogBurner) : Leaf<LogBurner>(script, "Burning Logs") {
 
         Variables.lastKnownFiremakingXp = Skills.experience(Skill.Firemaking)
         // Failsafe
-        Variables.timeSinceLastFiremakingXp = ScriptManager.getRuntime(true) + 30000
+        Variables.timeSinceLastFiremakingXp = ScriptManager.getRuntime(true) + 3000
     }
 }
