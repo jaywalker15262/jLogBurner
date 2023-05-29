@@ -8,7 +8,7 @@ object Constants {
     val LOG_COSTS = arrayOf(100, 100, 50, 400, 30, 700, 400, 1100, 550)
     val LOG_AMOUNTS = arrayOf(81, 189, 108, 378, 297, 1107, 4644, 13635, 21978)
     val LOG_LEVELS = arrayOf(1, 15, 30, 35, 45, 50, 60, 75, 90)
-    val LOG_IDS = arrayOf(1511, 1521, 1519, 6333, 1515, 6332, 1513, 19669)
+    val LOG_IDS = arrayOf(1511, 1521, 1519, 6333, 1517, 6332, 1515, 1513, 19669)
     val FIREMAKING_LEVELS = arrayOf(15, 30, 35, 45, 50, 60, 75, 90, 99)
     val LOG_TYPES = arrayOf("Logs", "Oak logs", "Willow logs", "Teak logs", "Maple logs", "Mahogany logs", "Yew logs",
         "Magic logs", "Redwood logs")

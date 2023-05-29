@@ -73,7 +73,7 @@ object GrandExchangeHelper {
             return false
         }
 
-        for (n in 0..8) {
+        for (n in Constants.LOG_COSTS.indices) {
             if (Variables.stopAtLvl > Constants.LOG_LEVELS[n] && currFiremakingLevel < Constants.FIREMAKING_LEVELS[n]) {
                 var geSlot = GrandExchange.createOffer(Constants.LOG_IDS[n], Constants.LOG_AMOUNTS[n],
                     Constants.LOG_COSTS[n], true)
