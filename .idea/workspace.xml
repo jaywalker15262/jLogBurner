@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Get rid of all the ugly nesting and use when instead.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Make it stop idling for no reason less often due to bug with tracking firemaking xp." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +41,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8bda3128-fe05-430d-9ff5-a95519cde14e" />
+        <option name="url" value="https://github.com/jaywalker15262/jLogBurner.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,7 +125,37 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1685307919464</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Quick bugfix for assigning wrong value to logsToBurn.">
+      <created>1685309421042</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1685309421042</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Accidentally fked something up, fixing it.">
+      <created>1685349818803</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1685349818803</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Move comment.">
+      <created>1685350301366</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1685350301366</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Make the script a lot smoother.">
+      <created>1685350785365</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1685350785365</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Make it stop idling for no reason less often due to bug with tracking firemaking xp.">
+      <created>1685350839439</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1685350839439</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +174,11 @@
     <MESSAGE value="Improving logic for burning branch checks." />
     <MESSAGE value="Removing redundant for loop in SetupInventory()" />
     <MESSAGE value="Get rid of all the ugly nesting and use when instead." />
-    <option name="LAST_COMMIT_MESSAGE" value="Get rid of all the ugly nesting and use when instead." />
+    <MESSAGE value="Quick bugfix for assigning wrong value to logsToBurn." />
+    <MESSAGE value="Accidentally fked something up, fixing it." />
+    <MESSAGE value="Move comment." />
+    <MESSAGE value="Make the script a lot smoother." />
+    <MESSAGE value="Make it stop idling for no reason less often due to bug with tracking firemaking xp." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make it stop idling for no reason less often due to bug with tracking firemaking xp." />
   </component>
 </project>

@@ -61,7 +61,14 @@ class BurnLogs(script: LogBurner) : Leaf<LogBurner>(script, "Burning Logs") {
             return
         }
 
-        Variables.lastKnownFiremakingXp = Skills.experience(Skill.Firemaking)
         Variables.timeSinceLastFiremakingXp = ScriptManager.getRuntime(true) + 3000     // Failsafe
+        val oldFiremakingXp = Variables.lastKnownFiremakingXp
+        for (n in 1..50) {
+            Variables.lastKnownFiremakingXp = Skills.experience(Skill.Firemaking)
+            if (oldFiremakingXp != Variables.lastKnownFiremakingXp)
+                break
+
+            Condition.sleep(50)
+        }
     }
 }
