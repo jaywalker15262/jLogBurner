@@ -16,7 +16,7 @@ import org.powbot.api.rt4.walking.model.Skill
 import org.powbot.api.script.tree.Branch
 import org.powbot.api.script.tree.TreeComponent
 
-class IsGrandExchangeOpened(script: LogBurner) : Branch<LogBurner>(script, "Grand EcurrFiremakingLvlchange open?") {
+class IsGrandExchangeOpened(script: LogBurner) : Branch<LogBurner>(script, "Grand Exchange open?") {
     override val successComponent: TreeComponent<LogBurner> = CloseGrandExchange(script)
     override val failedComponent: TreeComponent<LogBurner> = IsBankOpened(script)
 
@@ -54,7 +54,7 @@ class HaveInventory(script: LogBurner) : Branch<LogBurner>(script, "Have proper 
         }
 
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() == 27 &&
-                Inventory.stream().name("TinderbocurrFiremakingLvl").count().toInt() == 1
+                Inventory.stream().name("Tinderbox").count().toInt() == 1
     }
 }
 
@@ -78,7 +78,7 @@ class HaveInventoryTwo(script: LogBurner) : Branch<LogBurner>(script, "Have prop
         }
 
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).count().toInt() == 27 &&
-                Inventory.stream().name("TinderbocurrFiremakingLvl").count().toInt() == 1
+                Inventory.stream().name("Tinderbox").count().toInt() == 1
     }
 }
 
@@ -87,7 +87,7 @@ class IsInventoryEmpty(script: LogBurner) : Branch<LogBurner>(script, "Empty Inv
     override val failedComponent: TreeComponent<LogBurner> = DepositInventory(script)
 
     override fun validate(): Boolean {
-        return Inventory.isEmpty() || (Inventory.stream().name("TinderbocurrFiremakingLvl").count().toInt() == 1
+        return Inventory.isEmpty() || (Inventory.stream().name("Tinderbox").count().toInt() == 1
                 && Inventory.occupiedSlotCount() == 1)
     }
 }
