@@ -56,19 +56,15 @@ class BurnLogs(script: LogBurner) : Leaf<LogBurner>(script, "Burning Logs") {
             return
         }
 
+        val oldFiremakingXp = Variables.lastKnownFiremakingXp
+        // We need to set it here, before interacting with the log, just in case.
+        Variables.lastKnownFiremakingXp = Skills.experience(Skill.Firemaking)
         if (!fireLog.interact("Use")) {
             script.info("Failed to use the tinderbox on the logs.")
+            Variables.lastKnownFiremakingXp = oldFiremakingXp
             return
         }
 
-        Variables.timeSinceLastFiremakingXp = ScriptManager.getRuntime(true) + 3000     // Failsafe
-        val oldFiremakingXp = Variables.lastKnownFiremakingXp
-        for (n in 1..50) {
-            Variables.lastKnownFiremakingXp = Skills.experience(Skill.Firemaking)
-            if (oldFiremakingXp != Variables.lastKnownFiremakingXp)
-                break
-
-            Condition.sleep(50)
-        }
+        Variables.timeSinceLastFiremakingXp = ScriptManager.getRuntime(true) + 2000     // Failsafe
     }
 }
