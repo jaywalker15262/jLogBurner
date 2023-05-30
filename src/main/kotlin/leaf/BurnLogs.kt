@@ -28,7 +28,7 @@ class BurnLogs(script: LogBurner) : Leaf<LogBurner>(script, "Burning Logs") {
                 return
             }
 
-            if (!Constants.BURNING_AREA.contains(Players.local()))
+            if (!Constants.AREA_BURNING.contains(Players.local()))
                 return
         }
 

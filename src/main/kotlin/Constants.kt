@@ -17,7 +17,7 @@ object Constants {
     val BURNING_START_TILE = Tile(3174, 3496, 0)
     val BURNING_START_TILE_TWO = Tile(3174, 3497, 0)
 
-    val BURNING_AREA = Area(Tile(3146, 3497, 0), Tile(3174, 3496, 0))
+    val AREA_BURNING = Area(Tile(3146, 3497, 0), Tile(3174, 3496, 0))
 
     val BURNING_START_PATH = TilePath(arrayOf(Tile(3162, 3490, 0), Tile(3162, 3491, 0),
         Tile(3162, 3492, 0), Tile(3163, 3493, 0), Tile(3164, 3494, 0),

@@ -5,5 +5,5 @@ pluginManagement {
     }
     
 }
-rootProject.name = "LogBurner"
+rootProject.name = "jLogBurner"
 
