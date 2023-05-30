@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Adjusting previous commit.">
+    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Misc refactoring.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +175,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1685386477592</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="Misc refactoring.">
+      <created>1685466462341</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1685466462341</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +208,7 @@
     <MESSAGE value="Followup on last commit." />
     <MESSAGE value="Bugfix-" />
     <MESSAGE value="Adjusting previous commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusting previous commit." />
+    <MESSAGE value="Misc refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Misc refactoring." />
   </component>
 </project>

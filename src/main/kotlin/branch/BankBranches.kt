@@ -39,7 +39,6 @@ class HaveInventory(script: LogBurner) : Branch<LogBurner>(script, "Have proper 
     override val failedComponent: TreeComponent<LogBurner> = OpenBank(script)
 
     override fun validate(): Boolean {
-        Variables.logsToBurn = 0
         val currFiremakingLvl = Skills.realLevel(Skill.Firemaking)
         Variables.logsToBurn = when {
             currFiremakingLvl > 89 -> 8
@@ -63,7 +62,6 @@ class HaveInventoryTwo(script: LogBurner) : Branch<LogBurner>(script, "Have prop
     override val failedComponent: TreeComponent<LogBurner> = IsInventoryEmpty(script)
 
     override fun validate(): Boolean {
-        Variables.logsToBurn = 0
         val currFiremakingLvl = Skills.realLevel(Skill.Firemaking)
         Variables.logsToBurn = when {
             currFiremakingLvl > 89 -> 8
