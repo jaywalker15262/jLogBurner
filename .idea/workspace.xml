@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Minor improvement">
+    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Buys extra logs to make sure we get to the level we want.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Constants.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/leaf/OpenBank.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/leaf/OpenBank.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +202,13 @@
       <option name="presentableId" value="LOCAL−00016" />
       <updated>1685634876530</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL−00017" summary="Buys extra logs to make sure we get to the level we want.">
+      <created>1685642884363</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1685642884363</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +239,7 @@
     <MESSAGE value="Removing redundancy for logsToBurn variable." />
     <MESSAGE value="Minor bugfixes." />
     <MESSAGE value="Minor improvement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor improvement" />
+    <MESSAGE value="Buys extra logs to make sure we get to the level we want." />
+    <option name="LAST_COMMIT_MESSAGE" value="Buys extra logs to make sure we get to the level we want." />
   </component>
 </project>
