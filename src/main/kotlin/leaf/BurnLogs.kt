@@ -51,7 +51,7 @@ class BurnLogs(script: LogBurner) : Leaf<LogBurner>(script, "Burning Logs") {
             return
         }
 
-        if (!tinderBox.interact("Use", true)) {
+        if (!tinderBox.interact("Use")) {
             script.info("Failed to select the tinderbox.")
             return
         }

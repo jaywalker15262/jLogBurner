@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Removing redundancy for logsToBurn variable.">
+    <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="Minor bugfixes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Constants.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/branch/MovementBranches.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/branch/MovementBranches.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/leaf/BurnLogs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/leaf/BurnLogs.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/leaf/OpenBank.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/leaf/OpenBank.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +188,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1685468018288</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Minor bugfixes.">
+      <created>1685632943288</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1685632943288</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +223,7 @@
     <MESSAGE value="Adjusting previous commit." />
     <MESSAGE value="Misc refactoring." />
     <MESSAGE value="Removing redundancy for logsToBurn variable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing redundancy for logsToBurn variable." />
+    <MESSAGE value="Minor bugfixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor bugfixes." />
   </component>
 </project>
