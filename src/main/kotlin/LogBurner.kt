@@ -123,5 +123,5 @@ object LoggingService {
 }
 
 fun main(args: Array<String>) {
-    ScriptUploader().uploadAndStart("jLogBurner", "", "127.0.0.1:5565", true, false)
+    ScriptUploader().uploadAndStart("jLogBurner", "", "127.0.0.1:555", true, false)
 }
