@@ -20,7 +20,7 @@ class AtBurningArea(script: LogBurner) : Branch<LogBurner>(script, "On the burni
     }
 }
 
-class ChooseBurningTile(script: LogBurner) : Branch<LogBurner>(script, "Have proper inventory?") {
+class ChooseBurningTile(script: LogBurner) : Branch<LogBurner>(script, "Burning tile 1?") {
     override val successComponent: TreeComponent<LogBurner> = TravelToBurningTile(script)
     override val failedComponent: TreeComponent<LogBurner> = TravelToBurningTileTwo(script)
 

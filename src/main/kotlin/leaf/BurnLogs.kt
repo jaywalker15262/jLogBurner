@@ -32,6 +32,13 @@ class BurnLogs(script: LogBurner) : Leaf<LogBurner>(script, "Burning Logs") {
                 return
         }
 
+        val deselect = Inventory.selectedItem()
+        if (deselect.valid() && (!deselect.interact("Cancel")
+                    || !Condition.wait({ !Inventory.selectedItem().valid() }, 50, 60))) {
+            script.info("Failed to deselect the currently selected item in our inventory.")
+            return
+        }
+
         val tinderBox = Inventory.stream().name("Tinderbox").first()
         if (!tinderBox.valid()) {
             script.info("Failed to find the tinderbox in our inventory.")

@@ -6,6 +6,8 @@ import org.powbot.api.Condition
 import org.powbot.api.Random
 import org.powbot.api.rt4.*
 import org.powbot.api.script.tree.Leaf
+import org.powbot.dax.api.DaxWalker
+import org.powbot.dax.api.models.RunescapeBank
 
 class OpenBank(script: LogBurner) : Leaf<LogBurner>(script, "Opening Bank") {
     override fun execute() {
@@ -14,9 +16,9 @@ class OpenBank(script: LogBurner) : Leaf<LogBurner>(script, "Opening Bank") {
                 Condition.wait({ Bank.opened() }, Condition.sleep(Random.nextGaussian(170, 250, 200, 20.0)), 13)
         }
         else {
-            Movement.moveTo(Constants.BANK_TILE)
+            DaxWalker.walkToBank(RunescapeBank.GRAND_EXCHANGE)
             Camera.turnTo(Bank.nearest().tile())
-            Condition.wait({ Bank.inViewport() }, 50, 50)
+            Condition.wait({ Bank.inViewport() }, 50, 80)
         }
     }
 }
