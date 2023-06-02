@@ -9,7 +9,7 @@ import org.powbot.api.script.tree.TreeComponent
 /**
  *  The root node which is executed by the script
  */
-class IsLoggedIn(script: LogBurner) : Branch<LogBurner>(script, "Logged In?") {
+class IsLoggedIn(script: LogBurner) : Branch<LogBurner>(script, "Logged in?") {
     override val successComponent: TreeComponent<LogBurner> = AtBurningArea(script)
     override val failedComponent: TreeComponent<LogBurner> = LogIn(script)
 
