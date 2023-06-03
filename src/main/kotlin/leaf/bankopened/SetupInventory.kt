@@ -37,7 +37,7 @@ class SetupInventory(script: LogBurner) : Leaf<LogBurner>(script, "Setting Up In
             }
 
             if (!Bank.withdraw(bankTinderBox, 1)) {
-                script.info("Failed to find withdraw a tinderbox.")
+                script.info("Failed to withdraw a tinderbox.")
                 return
             }
 
