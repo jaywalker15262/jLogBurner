@@ -6,7 +6,7 @@ import org.powbot.api.rt4.TilePath
 
 object Constants {
     val LOG_COSTS = arrayOf(100, 100, 50, 400, 30, 700, 400, 1100, 550)
-    val LOG_AMOUNTS = arrayOf(108, 216, 135, 405, 324, 1134, 4671, 13662, 22005)
+    val LOG_AMOUNTS = arrayOf(108, 243, 135, 405, 324, 1134, 4671, 13662, 22005)
     val LOG_LEVELS = arrayOf(1, 15, 30, 35, 45, 50, 60, 75, 90)
     val LOG_IDS = arrayOf(1511, 1521, 1519, 6333, 1517, 6332, 1515, 1513, 19669)
     val FIREMAKING_LEVELS = arrayOf(15, 30, 35, 45, 50, 60, 75, 90, 99)
