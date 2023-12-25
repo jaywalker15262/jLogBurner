@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="misc">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/leaf/bankopened/CloseBank.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/leaf/bankopened/CloseBank.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2QNjNOSK2JOKkmX89YE28wr5WvY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -217,7 +223,19 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1685738051676</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="typo">
+      <created>1685817763723</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1685817763723</updated>
+    </task>
+    <task id="LOCAL−00021" summary="adjusting amt of oaks purchased.">
+      <created>1686844798413</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1686844798414</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +269,8 @@
     <MESSAGE value="Buys extra logs to make sure we get to the level we want." />
     <MESSAGE value="Improve paths a bit" />
     <MESSAGE value="Improve paths and banking a bit." />
+    <MESSAGE value="typo" />
+    <MESSAGE value="adjusting amt of oaks purchased." />
     <MESSAGE value="misc" />
     <option name="LAST_COMMIT_MESSAGE" value="misc" />
   </component>

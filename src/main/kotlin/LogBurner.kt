@@ -66,8 +66,6 @@ class LogBurner : TreeScript() {
     }
 
     override fun onStart() {
-        log.info(DaxWalker.getPath(BANK_TILE).toString())
-
         if (Variables.stopAtLvl > 0 && Skills.realLevel(Skill.Firemaking) >= Variables.stopAtLvl) {
             info("We've already reached that level.")
             ScriptManager.stop()
