@@ -32,9 +32,13 @@ class TravelToBurningTile(script: LogBurner) : Leaf<LogBurner>(script, "Travelin
             }
 
             if (!Condition.wait({ Players.local()
-                .distanceTo(Constants.BURNING_START_TILE).toInt() == 0 }, 50, 120))
+                .distanceTo(Constants.BURNING_START_TILE).toInt() == 0 }, 50, 120)) {
                 script.info("Failed to find that we are on the start burning tile.")
+                return
+            }
         }
+
+        Variables.traveling = false
     }
 }
 
@@ -63,8 +67,12 @@ class TravelToBurningTileTwo(script: LogBurner) : Leaf<LogBurner>(script, "Trave
             }
 
             if (!Condition.wait({ Players.local()
-                    .distanceTo(Constants.BURNING_START_TILE_TWO).toInt() == 0 }, 50, 120))
+                    .distanceTo(Constants.BURNING_START_TILE_TWO).toInt() == 0 }, 50, 120)) {
                 script.info("Failed to find that we are on the start burning tile 2.")
+                return
+            }
         }
+
+        Variables.traveling = false
     }
 }
