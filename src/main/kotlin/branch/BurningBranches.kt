@@ -21,3 +21,14 @@ class BurningCheck(script: LogBurner) : Branch<LogBurner>(script, "Already burni
                 || Players.local().animation() == 733)
     }
 }
+
+class BurningCheckTwo(script: LogBurner) : Branch<LogBurner>(script, "Already burning?") {
+    override val successComponent: TreeComponent<LogBurner> = Chill(script)
+    override val failedComponent: TreeComponent<LogBurner> = IsGrandExchangeOpened(script)
+
+    override fun validate(): Boolean {
+        return !Variables.skipTile && Variables.lastKnownFiremakingXp == Skills.experience(Skill.Firemaking)
+                && (Variables.timeSinceLastFiremakingXp > ScriptManager.getRuntime(true)
+                || Players.local().animation() == 733)
+    }
+}

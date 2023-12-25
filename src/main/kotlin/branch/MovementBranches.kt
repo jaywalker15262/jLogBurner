@@ -12,7 +12,7 @@ import org.powbot.api.script.tree.TreeComponent
 
 class AtBurningArea(script: LogBurner) : Branch<LogBurner>(script, "On the burning start tile?") {
     override val successComponent: TreeComponent<LogBurner> = BurningCheck(script)
-    override val failedComponent: TreeComponent<LogBurner> = IsGrandExchangeOpened(script)
+    override val failedComponent: TreeComponent<LogBurner> = BurningCheckTwo(script)
 
     override fun validate(): Boolean {
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).isNotEmpty()

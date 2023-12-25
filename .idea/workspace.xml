@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e27f311-3a52-47f7-8269-09498d08ba05" name="Changes" comment="misc">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LogBurner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/leaf/bankopened/CloseBank.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/leaf/bankopened/CloseBank.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/branch/BurningBranches.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/branch/BurningBranches.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/branch/MovementBranches.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/branch/MovementBranches.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +65,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2QNjNOSK2JOKkmX89YE28wr5WvY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -235,7 +234,42 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1686844798414</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="misc">
+      <option name="closed" value="true" />
+      <created>1703493132371</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1703493132371</updated>
+    </task>
+    <task id="LOCAL−00023" summary="misc">
+      <option name="closed" value="true" />
+      <created>1703493990847</created>
+      <option name="number" value="LOCAL−00023" />
+      <option name="presentableId" value="LOCAL−00023" />
+      <updated>1703493990847</updated>
+    </task>
+    <task id="LOCAL−00024" summary="misc">
+      <option name="closed" value="true" />
+      <created>1703494087160</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1703494087160</updated>
+    </task>
+    <task id="LOCAL−00025" summary="misc">
+      <option name="closed" value="true" />
+      <created>1703494528895</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1703494528895</updated>
+    </task>
+    <task id="LOCAL−00026" summary="misc">
+      <option name="closed" value="true" />
+      <created>1703494974495</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1703494974495</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
