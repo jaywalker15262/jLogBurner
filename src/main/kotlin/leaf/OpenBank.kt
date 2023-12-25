@@ -9,9 +9,7 @@ import org.powbot.api.script.tree.Leaf
 
 class OpenBank(script: LogBurner) : Leaf<LogBurner>(script, "Opening Bank") {
     override fun execute() {
-        Condition.sleep(Random.nextGaussian(470, 750, 630, 160.0))
-        if (Bank.inViewport() && (Players.local().distanceTo(Constants.BANK_TILE).toInt() < 4
-                    || !Players.local().inMotion())) {
+        if (Bank.inViewport() && Players.local().distanceTo(Constants.BANK_TILE).toInt() < 4) {
             if (Bank.open())
                 Condition.wait({ Bank.opened() }, Condition.sleep(Random.nextGaussian(170, 250, 200, 20.0)), 13)
         }
