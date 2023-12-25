@@ -32,7 +32,7 @@ class TravelToBurningTile(script: LogBurner) : Leaf<LogBurner>(script, "Travelin
             }
 
             if (!Condition.wait({ Players.local()
-                .distanceTo(Constants.BURNING_START_TILE).toInt() == 0 }, 50, 80))
+                .distanceTo(Constants.BURNING_START_TILE).toInt() == 0 }, 50, 120))
                 script.info("Failed to find that we are on the start burning tile.")
         }
     }
@@ -63,7 +63,7 @@ class TravelToBurningTileTwo(script: LogBurner) : Leaf<LogBurner>(script, "Trave
             }
 
             if (!Condition.wait({ Players.local()
-                    .distanceTo(Constants.BURNING_START_TILE_TWO).toInt() == 0 }, 50, 80))
+                    .distanceTo(Constants.BURNING_START_TILE_TWO).toInt() == 0 }, 50, 120))
                 script.info("Failed to find that we are on the start burning tile 2.")
         }
     }

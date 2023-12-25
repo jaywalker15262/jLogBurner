@@ -9,6 +9,7 @@ object Variables {
     var secondLine = false
     var skipTile = false
     var buyLogs = false
+    var traveling = true
     var burningTileMatrix = Constants.BURNING_START_TILE.matrix()
     var burningTileMatrixTwo = Constants.BURNING_START_TILE_TWO.matrix()
 }

@@ -1,7 +1,6 @@
 package com.jay.logburner
 
 import com.google.common.eventbus.Subscribe
-import com.jay.logburner.Constants.BANK_TILE
 import com.jay.logburner.branch.IsLoggedIn
 import com.jay.logburner.helpers.GrandExchangeHelper
 import org.powbot.api.Color
@@ -14,7 +13,6 @@ import org.powbot.api.script.paint.Paint
 import org.powbot.api.script.paint.PaintBuilder
 import org.powbot.api.script.tree.TreeComponent
 import org.powbot.api.script.tree.TreeScript
-import org.powbot.dax.api.DaxWalker
 import org.powbot.mobile.script.ScriptManager
 import org.powbot.mobile.service.ScriptUploader
 import java.util.logging.Logger
@@ -125,5 +123,5 @@ object LoggingService {
 }
 
 fun main(args: Array<String>) {
-    ScriptUploader().uploadAndStart("jLogBurner", "", "127.0.0.1:5595", true, false)
+    ScriptUploader().uploadAndStart("jLogBurner", "", "127.0.0.1:57403", true, false)
 }

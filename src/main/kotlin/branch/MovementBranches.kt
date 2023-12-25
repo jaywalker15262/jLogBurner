@@ -16,7 +16,7 @@ class AtBurningArea(script: LogBurner) : Branch<LogBurner>(script, "On the burni
 
     override fun validate(): Boolean {
         return Inventory.stream().name(Constants.LOG_TYPES[Variables.logsToBurn]).isNotEmpty()
-                && Constants.AREA_BURNING.contains(Players.local())
+                && Constants.AREA_BURNING.contains(Players.local()) && !Variables.traveling
     }
 }
 

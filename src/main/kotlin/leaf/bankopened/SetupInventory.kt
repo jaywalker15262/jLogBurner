@@ -72,5 +72,8 @@ class SetupInventory(script: LogBurner) : Leaf<LogBurner>(script, "Setting Up In
                 return
             }
         }
+
+        Variables.secondLine = !Variables.secondLine
+        Variables.lastKnownFiremakingXp = 0
     }
 }
